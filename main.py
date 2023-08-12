@@ -2,7 +2,7 @@ import requests
 from flask import Flask, request, send_from_directory
 
 # Replace "YOUR_API_KEY_HERE" with your actual API key.
-API_KEY = "YOUR_API_KEY_HERE"
+API_KEY = "TVD6MMV36I79JJPG"
 BASE_URL = "https://www.alphavantage.co/query"
 
 app = Flask(__name__)
