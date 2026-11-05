@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-	<title>Flask ChatBot</title>
+    <meta charset="UTF-8" />
+    <title>AI Chat</title>
+
+    <!-- This line connects our CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-	<h1>Welcome to ChatBot</h1>
-	<p>This page is created with Flask</p>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="app-header">
+            <h1>AI Chat</h1>
+            <p>Powered by Flask</p>
+        </header>
+
+        <!-- Chat messages -->
+        <main class="chat-window">
+            <div class="message bot">
+                Hello! I'm your AI assistant.
+            </div>
+        </main>
+
+        <!-- Input area -->
+        <footer class="chat-input">
+            <input type="text" placeholder="Type your message..." />
+            <button>Send</button>
+        </footer>
+
+    </div>
+
 </body>
 </html>
