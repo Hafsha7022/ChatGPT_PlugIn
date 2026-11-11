@@ -6,6 +6,7 @@
 
     <!-- This line connects our CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
 </head>
 <body>
 
@@ -18,7 +19,7 @@
         </header>
 
         <!-- Chat messages -->
-        <main class="chat-window">
+        <main class="chat-window" id="chat">
             <div class="message bot">
                 Hello! I'm your AI assistant.
             </div>
@@ -26,11 +27,13 @@
 
         <!-- Input area -->
         <footer class="chat-input">
-            <input type="text" placeholder="Type your message..." />
-            <button>Send</button>
+            <input type="text" placeholder="Type your message..." id="message"/>
+            <button id="send-btn">Send</button>
         </footer>
 
     </div>
+
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
 
 </body>
 </html>

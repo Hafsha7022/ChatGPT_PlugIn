@@ -60,6 +60,14 @@ body {
     background: rgba(255, 249, 196, 1);
     color: rgba(123, 116, 116, 0.815);
 }
+.message.user {
+    align-self: flex-end;
+    background: rgba(76, 175, 80, 0.6);
+    color: white;
+    margin-left: 20%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
 
 .chat-input {
     display: flex;
